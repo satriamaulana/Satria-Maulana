@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<!--Nilai absolut adalah sebuah nilai di dalam CSS, dimana nilai tersebut tidak dipengaruhi kondisi tag induknya (parent), 
+    dan didasarkan pada ukuran sebenarnya di media printing.-->
+    <!--nilai absolut dalam CSS adalah: milimeter(mm), centimeter(cm), inchi(in), point(pt), dan pica(pc).-->
+
+<!--Nilai relatif didalam CSS dipengaruhi oleh tag disekitarnya. CSS mendukung banyak nilai relatif, beberapa diantaranya: 
+    pixel(px), Em-height(em), dan X-height(ex).-->
+
+<!--Nilai persentasi adalah sebuah nilai per seratus (%) dari suatu property yang relatif terhadap induk (parent) dari tag tersebut-->
+        <head>
+            <title>Contoh Perbandingan Ukuran dari font-size</title>
+            <style type="text/css">
+            body { font-size:14pt; }
+            p.satu { font-size:8mm; }
+            p.dua { font-size:0.35in; }
+            p.tiga { font-size:2.2pc; }
+            p.empat { font-size:20px; }
+            p.lima { font-size:1.8em }
+            p.enam { font-size:3ex; }
+            p.tujuh { font-size:190%; }
+            </style>
+        </head>
+    <body>
+        <p>Kalimat ini akan berukuran 14 point</p>
+        <p class="satu">Kalimat ini akan berukuran 8 milimeter</p>
+        <p class="dua">Kalimat ini akan berukuran 0,35 inchi</p>
+        <p class="tiga">Kalimat ini akan berukuran 2,2 pica</p>
+        <p class="empat">Kalimat ini akan berukuran 20 pixel</p>
+        <p class="lima">Kalimat ini akan berukuran 1,8 em</p>
+        <p class="enam">Kalimat ini akan berukuran 3 ex</p>
+        <p class="tujuh">Kalimat ini akan berukuran 190%</p>
+    </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <!--1. Inline style, yakni style yang langsung melekat pada tag.-->
+    <!--2. Internal style, yakni style yang dideklarasikan pada awal halaman (tag <style>)-->
+    <!--3. Eksternal style, yakni style yang dideklarasikan pada sebuah file .css , 
+        dan dipanggil melalui tag <link> atau @import-->
+        <head>
+            <title>Contoh Kasus Spesifik CSS</title>
+            <style type="text/css">
+            p {color:red;}
+            div p {color:green;}
+            #aaa {color:orange;}
+            body div p {color:yellow;}
+            div p.kalimat {color:silver;}
+            </style>
+        </head>
+
+    <!-- div menunjukkan division atau divisi atau bagian yang merupakan generic blok konten yang dapat digunakan sebagai 
+        penampung untuk mengelompokkan beberapa elemen menjadi satu.-->
+    <body>
+        <div>
+        60
+        <p id="aaa">
+        Belajar web sangat menyenangkan
+        </p>
+        </div>
+    </body>
+</html>

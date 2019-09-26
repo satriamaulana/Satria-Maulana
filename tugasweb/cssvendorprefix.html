@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<!--Vendor prefix adalah sebutan untuk penambahan beberapa karakter khusus di awal penulisan property, 
+    terutama untuk property CSS3 terbaru.-->
+<!--Sebagai contoh, untuk property column-count, jika menggunakan vendor prefix ditulis menjadi: -webkit-column-count-->
+        
+<!--Berikut adalah awalan vendor prefix pada web browser populer:
+1. -webkit- (Chrome, dan versi terbaru dari Opera)
+2. -moz- (Firefox)
+3. -o- (Opera versi lama)
+4. -ms- (Internet Explorer)-->
+
+        <head>
+            <title> Contoh CSS Vendor Prefix </title>
+        <style>
+        .myBox{
+            width: 100px;
+            height: 100px;
+            padding: 30px;
+            background: linear-gradient(top, green, blue);
+            background: -webkit-linear-gradient(top, green, blue);
+            background: -moz-linear-gradient(top, green, blue);
+            background: -o-linear-gradient(top, green, blue);
+            background: -ms-linear-gradient(top, green, blue);
+            }
+        </style>
+        </head>
+    <body>
+        <div class="myBox"></div>
+    </body>
+</html>

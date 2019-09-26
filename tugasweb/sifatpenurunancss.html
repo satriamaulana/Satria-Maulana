@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <!-- Syarat untuk inheritance adalah: tag tersebut harus berada di dalam tag lainnya.-->
+
+            <!-- kita membuat tag <div satu> dan <div dua> ,yang <div satu> tidak terdapat nilai property 
+            inherit,kebalikannya yang <div dua> terdapa nilai property inherit-->
+            <title>Contoh Inheritance pada CSS</title>
+                <style type="text/css">
+            div.satu {
+            border: 1px solid black;
+            color: blue;
+            }
+            div.dua {
+            border: 1px solid black;
+            }
+            p.dua {
+            border: inherit;
+            }
+
+                </style>
+            <!-- kode CSS tersebut akan membuat seluruh text di dalam tag
+            <div> akan berwarna hitams, walapun di dalam tag <div> juga terdapat tag-tag lainnya.-->
+        </head>
+    <body>
+        <!--  Jika sebuah kode CSS memiliki nilai property inherit, 
+            maka property tersebut akan mencopy nilai dari tag induk (parent).-->
+        <!-- kita lihat saja apa perbedaan dari kedua div tersebut-->
+            <div class="satu">
+            <p class="satu">
+            Kalimat ini tanpa <em class="satu">nilai property
+            inherit</em> CSS
+            </p>
+            </div>
+            <br />
+            <div class="dua">
+            <p class="dua">
+            Kalimat ini menggunakan <em class="dua">nilai property
+            inherit</em> CSS
+            </p>
+            </div>
+    </body>
+</html>
