@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<!-- pembuka file html -->
+<html>
+<!-- pembuka tag head yang berfungsi sebagai kepala dari dokumen html -->
+
+<head>
+    <!-- tag title berfungsi sebagai judul dari dokumen html yang kita buat -->
+    <title>Belajar JavaScript di Jti.polije</title>
+    <script>
+        var situs = "jti.polije";
+        console.log(situs.length); // 10
+        var belajar = "belajar javascript";
+        console.log(belajar.length);
+        console.log(situs.charAt(0)); // d
+        console.log(situs.charAt(5)); // i
+        console.log(situs.charAt(7)); // k
+        console.log(situs.charAt(11)); // string kosong
+        console.log(situs.charCodeAt(0)); // 100
+        console.log(situs.charCodeAt(5)); // 105
+        console.log(situs.charCodeAt(7)); // 107
+        console.log(situs.charCodeAt(11)); // NaN
+        console.log(situs.concat(" oke"));
+        // jti.polije oke
+        console.log(situs.concat(" situs", " belajar", " javaScript"));
+        // jti.polije situs belajar javaScript
+        console.log(situs.indexOf("k")); // 7
+        console.log(situs.indexOf("i")); // 3
+        console.log(situs.indexOf("i",4));
+        // 5 (pencarian dimulai dari karakter ke-5)
+        var belajar = "Saya sedang belajar javaScript di jti.polije.com";
+        console.log(belajar.indexOf("sedang")); // 4
+        // (pencarian dimulai dari karakter ke-18)
+        console.log(belajar.indexOf("ja",17)); // 20
+        console.log(belajar.indexOf("php")); // -1 (tidak ditemukan)
+        var c = "c";
+        console.log(c.localeCompare("c")); // 0
+        console.log(c.localeCompare("a")); // 1
+        console.log(c.localeCompare("d")); // -1
+        var kota = "Jakarta";
+        console.log(kota.localeCompare("jakarta")); // 1 (case sensitif)
+        console.log(kota.localeCompare("padang")); // -1
+        console.log(kota.localeCompare("bandung")); // 1
+        var kalimat = "1 tambah 2 sama dengan 3";
+        var hasil = kalimat.match(/\d+/g); // cari semua angka
+        console.log(hasil); // hasil: ["1", "2", "3"]
+        kalimat = "Saya sedang belajar PHP di Tutorial PHP jti.polije.com";
+        // cari semua kata "PHP", ganti menjadi "JavaScript";
+        hasil = kalimat.replace(/PHP/g,"JavaScript");
+        // hasil: Saya sedang belajar JavaScript di Tutorial
+        // JavaScript jti.polije.com
+        console.log(hasil);
+        kalimat = "Saya sedang belajar JavaScript di Tutorial JavaScript jti.polije.com ";
+        hasil = kalimat.search(/JavaScript/g); // cari kata "JavaScript"
+        console.log(hasil); // 20 (JavaScript berada di karakter ke-21)
+        kalimat = "Belajar JavaScript";
+        // potong dari index ke 3 sampai dengan ke 7.
+        hasil = kalimat.slice(3,7)
+        console.log(hasil); // ajar
+        // potong dari index ke 9 dari awal sampai dengan index ke 6 dari akhir.
+        var hasil2 = kalimat.slice(8,-6)
+        console.log(hasil2); // Java
+        kalimat = "Satu,Dua,Tiga,Empat,Lima";
+        // pisahkan String "kalimat" menjadi array dengan pemisah tanda koma
+        hasil = kalimat.split(",")
+        console.log(hasil); // ["Satu"," Dua", "Tiga", "Empat", "Lima"]
+        var kalimat2 = "Satu;Dua;Tiga;Empat;Lima";
+        // pisahkan String "kalimat" menjadi array dengan pemisah tanda ";"
+        // batasi array hanya 3 isian
+        var hasil2 = kalimat2.split(";",3)
+        console.log(hasil2); // ["Satu", "Dua", "Tiga"]
+        kalimat = "Belajar JavaScript";
+        // ambil mulai dari index ke 3, sebanyak 9 karakter.
+        hasil = kalimat.substr(3,9);
+        console.log(hasil); // ajar Java
+        // ambil mulai dari index ke 6 dari akhir string
+        hasil2 = kalimat.substr(-6);
+        console.log(hasil2); // Script
+        kalimat = "Belajar JavaScript";
+        // potong dari index ke 3 sampai dengan ke 7.
+        hasil = kalimat.substring(3,7)
+        console.log(hasil); // ajar
+        // potong dari index ke 8 dari awal sampai dengan akhir String.
+        hasil2 = kalimat.substring(8)
+        console.log(hasil2); // JavaScript
+        kalimat = "Belajar JavaScript";
+        console.log(kalimat.toLocaleLowerCase()); // hasil: belajar javascript
+        console.log(kalimat.toLowerCase()); // hasil: belajar javascript
+        kalimat2 = "bELAJAR JaVaScrIPT";
+        console.log(kalimat2.toLocaleLowerCase()); // hasil: belajar javascript
+        console.log(kalimat2.toLowerCase()); // hasil: belajar javascript
+        kalimat = "Belajar JavaScript";
+        console.log(kalimat.toLocaleUpperCase()); // hasil: BELAJAR JAVASCRIPT
+        console.log(kalimat.toUpperCase()); // hasil: BELAJAR JAVASCRIPT
+        kalimat2 = "bELAJAR JaVaScrIPT";
+        console.log(kalimat2.toLocaleUpperCase()); // hasil: BELAJAR JAVASCRIPT
+        console.log(kalimat2.toUpperCase()); // hasil: BELAJAR JAVASCRIPT
+        kalimat = "Belajar JavaScript";
+        console.log(kalimat.toString()); // hasil: Belajar JavaScript
+        console.log(kalimat.valueOf()); // hasil: Belajar JavaScript
+        kalimat2 = "bELAJAR JaVaScrIPT";
+        console.log(kalimat2.toString()); // hasil: bELAJAR JaVaScrIPT
+        console.log(kalimat2.valueOf()); // hasil: Belajar JavaScript
+        var nama = " Chelsea Susanti ";
+        console.log(nama); // hasil:" Chelsea Susanti "
+        console.log(nama.trim());
+        var a = true;
+        var benar = true;
+        var salah = false;
+        a = true;
+        var b = false;
+        console.log(a.toString()); // true
+        console.log(b.toString()); // false
+        console.log(a.valueOf()); // true
+        console.log(b.valueOf()); // false
+        a = true;
+        benar = true;
+        console.log(a==benar); // true
+        a = 12;
+        b = 4;
+        console.log(a==b); // false
+        a = 7;
+        b = "7";
+        console.log(a==b); // true !
+        a = true;
+        benar = true;
+        console.log(a===benar); // true
+        a = 12;
+        b = 4;
+        console.log(a===b); // false
+        a = 7;
+        b = "7";
+        console.log(a===b); // false !
+        a = "7";
+        b = "7";
+        console.log(a===b); // true
+        a = true;
+        benar = true;
+        console.log(a!=benar); // false
+        a = 12;
+        b = 4;
+        console.log(a!=b); // true
+        a = 7;
+        b = "7";
+        console.log(a!=b); // false !
+        a = true;
+        benar = true;
+        console.log(a!==benar); // false
+        a = 12;
+        b = 4;
+        console.log(a!==b); // true
+        a = 7;
+        b = "7";
+        console.log(a!==b); // true !
+        a = "7";
+        b = "7";
+        console.log(a!==b); // false
+        a = 3;
+        b = 4;
+        console.log(a<b); // true
+        console.log(a<=b); // true
+        a = 5;
+        b = 5;
+        console.log(a<b); // false
+        console.log(a<=b); // true
+        a = 3;
+        b = 4;
+        console.log(a>b); // false
+        console.log(a>=b); // false
+        a = 5;
+        b = 5;
+        console.log(a>b); // false
+        console.log(a>=b); // true
+        a = true;
+        b = false;
+        hasil1 = a && b;
+        console.log(hasil1); //false
+        hasil2 = a && a;
+        console.log(hasil2); //true
+        hasil3 = a || b;
+        console.log(hasil3); //true
+        hasil4 = !a;
+        console.log(hasil4); //false
+    </script>
+    <!-- penutup tag head -->
+    <!-- pembuka tag body yang berfungsi untuk menampilkan isi dokumen html kita -->
+</head>
+
+<body>
+    <h1>Belajar JavaScript</h1>
+    <p>Saya sedang belajar JavaScript di jti.polije.com</p>
+    <p>Belajar Web Programming di Jti.polije.</p>
+</body>
+
+</html>

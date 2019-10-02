@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!-- pembuka file html -->
+<html>
+    <!-- pembuka tag head yang berfungsi sebagai kepala dari dokumen html -->
+<head>
+    <!-- tag title berfungsi sebagai judul dari dokumen html yang kita buat -->
+    <title>Belajar JavaScript di Jti.polije</title>
+    <!-- membuat pembuka javascript untuk menjalankan javascript -->
+    <script type="text/javascript">
+    // pada dibawah ini kita membuat sebuah fungsi yang bernama tambah_semangat
+    function tambah_semangat()
+        {
+            // pada bagian kode dibawah ini kita mendeklarasikan variabel a dengan value yang berasal dari div_semangat
+            // div_semangat merupakan selector yang kita gunakan 
+        var a=document.getElementById("div_semangat");
+        // fungsi a.innerhtml berfungsi untuk menambah kalimat atau string ke selector yang kita piih
+        a.innerHTML+="<p>Sedang Belajar JavaScript, Semangat...!!!</p>";
+        }
+    </script>
+    <!-- penutup tag head -->
+    <!-- pembuka tag body yang berfungsi untuk menampilkan isi dokumen html kita -->
+</head>
+<body>
+    <h1>Belajar JavaScript</h1>
+    <p> Saya sedang belajar JavaScript di jti.polije.com </p>
+    Klik tombol ini untuk menambahkan kalimat baru:
+    <!-- pada saat kita menekan tombol semangat maka akan menjalankan fungsi tambah_semangat yang telah kita buat tadinya -->
+    <button id="tambah" onclick="tambah_semangat()">Semangaat..!!</button>
+    <div id="div_semangat"></div>
+</body>
+</html>

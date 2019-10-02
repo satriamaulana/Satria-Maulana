@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!-- pembuka file html -->
+<html>
+    <!-- pembuka tag head yang berfungsi sebagai kepala dari dokumen html -->
+<head>
+    <!-- tag title berfungsi sebagai judul dari dokumen html yang kita buat -->
+    <title>Belajar JavaScript di Jti.polije</title>
+    <!-- membuat pembuka javascript untuk menjalankan javascript -->
+    <script type="text/javascript">
+    var nilai = "global";
+    function test() {
+    var nilai = "lokal";
+    var nilai_lokal = "jti.polije";
+    tanpa_var = "no_scope"; //akan menjadi global variabel!!
+    console.log(nilai);
+    }
+    test(); // print: lokal
+    console.log(nilai); // print: global
+    console.log(tanpa_var); //print: no_scope (bisa diakses)
+    console.log(nilai_lokal); //error, karena nilai_lokal adalah lokal variabel
+    </script>
+    <!-- penutup tag head -->
+    <!-- pembuka tag body yang berfungsi untuk menampilkan isi dokumen html kita -->
+</head>
+<body>
+        <h1>Belajar JavaScript</h1>
+        <p>Saya sedang belajar JavaScript di jti.polije.com</p>
+        <p>Belajar Web Programming di Jti.polije.</p>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!-- pembuka file html -->
+<html>
+<!-- pembuka tag head yang berfungsi sebagai kepala dari dokumen html -->
+
+<head>
+    <!-- tag title berfungsi sebagai judul dari dokumen html yang kita buat -->
+    <title>Belajar JavaScript di Jti.polije</title>
+    <!-- penutup tag head -->
+    <!-- pembuka tag body yang berfungsi untuk menampilkan isi dokumen html kita -->
+</head>
+<script type="text/javascript">
+    // pada dibawah ini kita membuat sebuah fungsi yang bernama tambah_semangat
+    window.onload = function()
+    {
+        // mendeklarasikan variabel hasil
+        var hasil;
+        // memberi nilai pada variabel nilai dengan penjumlahan
+        hasil = 1+3+5+7+9;
+        document.getElementById("tempat_hasil").innerHTML=hasil;
+    }
+</script>
+<body>
+    <h1>Belajar JavaScript</h1>
+    <p>Saya sedang belajar JavaScript di jti.polije.com</p>
+    <p>Belajar Web Programming di Jti.polije.</p>
+    <!-- pada baris kode dibawah ini berfungsi untuk mengeluarkan pesan popup ketika klik saya di klik mengunakan metode inline javascript -->
+    <!-- pada saat kita menekan tombol semangat maka akan menjalankan fungsi tambah_semangat yang telah kita buat tadinya -->
+    <button id="tambah" onclick="tambah_semangat()">Semangaat..!!</button>
+    <div id="tempat_hasil">
+    </div>
+</body>
+
+</html>
